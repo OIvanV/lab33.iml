@@ -21,6 +21,7 @@ public class lab1 {
             conn = DriverManager.getConnection(url, user, pass);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            System.out.println("нет подключение к бд");
         }
 
         Statement stat = null;
